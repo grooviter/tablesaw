@@ -27,6 +27,7 @@ dependencies {
 
     testImplementation "com.github.haifengl:smile-core:$smile"
     testImplementation "com.github.haifengl:smile-mkl:$smile"
+
     testImplementation "org.bytedeco:javacpp:$javacpp"
     testImplementation "org.bytedeco:openblas:$openblas-$javacpp"
     testImplementation "org.bytedeco:openblas-platform:$openblas-$javacpp"
