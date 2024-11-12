@@ -64,27 +64,27 @@ public class SmileConverterTest {
         InstantColumn.create(
             "instant",
             new Instant[] {
-              Instant.ofEpochMilli(1578452479123l), Instant.ofEpochMilli(1578451111111l)
+              Instant.ofEpochMilli(1_578_452_479_123L), Instant.ofEpochMilli(1_578_451_111_111L)
             }));
     table.addColumns(IntColumn.create("int", new int[] {8, 9}));
     table.addColumns(
         DateColumn.create(
-            "date", new LocalDate[] {LocalDate.of(2020, 01, 01), LocalDate.of(2020, 01, 07)}));
+            "date", new LocalDate[] {LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 7)}));
     table.addColumns(
         DateTimeColumn.create(
             "datetime",
             new LocalDateTime[] {
-              LocalDateTime.ofInstant(Instant.ofEpochMilli(1333352479123l), ZoneOffset.UTC),
-              LocalDateTime.ofInstant(Instant.ofEpochMilli(1333333333333l), ZoneOffset.UTC)
+              LocalDateTime.ofInstant(Instant.ofEpochMilli(1_333_352_479_123L), ZoneOffset.UTC),
+              LocalDateTime.ofInstant(Instant.ofEpochMilli(1_333_333_333_333L), ZoneOffset.UTC)
             }));
     table.addColumns(
         TimeColumn.create(
-            "time", new LocalTime[] {LocalTime.of(8, 37, 48), LocalTime.of(8, 59, 06)}));
-    table.addColumns(LongColumn.create("long", new long[] {3l, 4l}));
+            "time", new LocalTime[] {LocalTime.of(8, 37, 48), LocalTime.of(8, 59, 6)}));
+    table.addColumns(LongColumn.create("long", new long[] {3L, 4L}));
     table.addColumns(ShortColumn.create("short", new short[] {1, 2}));
     table.addColumns(StringColumn.create("string", new String[] {"james", "bond"}));
     table.addColumns(StringColumn.create("text", new String[] {"foo", "bar"}));
     DataFrame dataframe = table.smile().toDataFrame();
-    assertEquals(2, dataframe.nrows());
+    assertEquals(2, dataframe.nrow());
   }
 }
