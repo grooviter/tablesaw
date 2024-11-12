@@ -1,0 +1,27 @@
+rootProject.name = 'tablesaw'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "org.kordamp.gradle:settings-gradle-plugin:$kordamp"
+        classpath "org.kordamp.gradle:java-project-gradle-plugin:$kordamp"
+        classpath "org.kordamp.gradle:groovy-project-gradle-plugin:$kordamp"
+        classpath "org.kordamp.gradle:guide-gradle-plugin:$kordamp"
+        classpath "org.kordamp.gradle:codenarc-gradle-plugin:$kordamp"
+        classpath "org.ajoberstar:gradle-git-publish:3.0.0"
+    }
+}
+apply plugin: 'org.kordamp.gradle.settings'
+
+projects {
+    directories = ['docs', 'modules', 'samples']
+
+    plugins {
+        path(':guide') {
+            id 'org.ajoberstar.git-publish'
+        }
+    }
+}

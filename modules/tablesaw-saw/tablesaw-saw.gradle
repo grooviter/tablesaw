@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    implementation project(":tablesaw-core")
+    implementation "com.fasterxml.jackson.core:jackson-databind:$jackson"
+    implementation 'org.iq80.snappy:snappy:0.5'
+    implementation 'org.lz4:lz4-pure-java:1.8.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

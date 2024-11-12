@@ -1,0 +1,73 @@
+plugins {
+    id('org.kordamp.gradle.guide')
+    id('org.asciidoctor.jvm.convert')
+}
+
+tasks.register('generateJavadoc') {
+    dependsOn(
+        ':tablesaw-arrow:javadoc',
+        ':tablesaw-beakerx:javadoc',
+        ':tablesaw-core:javadoc',
+        ':tablesaw-excel:javadoc',
+        ':tablesaw-html:javadoc',
+        ':tablesaw-json:javadoc',
+        ':tablesaw-jsplot:javadoc',
+        ':tablesaw-saw:javadoc',
+    )
+}
+
+tasks.register('generateJavadocAggregation') {
+    dependsOn(project.rootProject
+        .getTasksByName('aggregateJavadoc', false)
+        .find()
+        .mustRunAfter(':guide:generateJavadoc'))
+}
+
+tasks.register("generateDocumentation") {
+    dependsOn('generateJavadocAggregation', asciidoctor)
+
+    doLast {
+        copy {
+            from "$rootDir/build/docs/aggregate-javadoc"
+            into "$buildDir/site/api/"
+        }
+        copy {
+            from "src/docs/site"
+            into "$buildDir/site"
+        }
+    }
+}
+
+tasks.register("setAuthentication") {
+    doLast {
+        System.setProperty("org.ajoberstar.grgit.auth.username", "${findProperty('PUBLISH_GH_TOKEN')}")
+    }
+}
+
+gitPublishPush {
+    dependsOn 'setAuthentication'
+    dependsOn 'generateDocumentation'
+}
+
+asciidoctor {
+    baseDirFollowsSourceDir()
+    outputDir layout.buildDirectory.dir("site").get()
+    attributes(
+            'tablesaw': version,
+            'github': '.',
+            'toc': 'left',
+            'source-highlighter': 'rouge'
+    )
+    resources {
+        from('src/docs/images') {
+            include '**/*'
+        }
+        into './images'
+    }
+}
+
+asciidoctorj {
+    modules {
+        diagram.version '2.1.0'
+    }
+}

@@ -1,0 +1,24 @@
+== Introduction
+
+Tablesaw combines tools for working with tables and columns with the ability to create statistical models and visualizations. In other words, it's a data frame, with added features. 
+
+=== What's a dataframe?
+A dataframe is an in-memory, tabular data structure in which each column holds a single datatype, while rows can contain a variety of types. Tablesaw provide these operations:
+
+* link:#_importing_exporting[Importing and exporting] data from text files and databases
+* link:#_adding_columns_to_table[Adding and removing columns]
+* link:#_sorting[Sorting]
+* link:#_filtering[Filtering]
+* link:#_create_a_column[Creating new columns] by applying functions to existing ones (mapping)
+* link:#_summarizing[Summarizing] columns or tables (reducing)
+* link:#_joining_tables[Combining tables by appending or joining]
+* Calculating descriptive statistics
+* link:#_add_and_remove_rows[Adding, updating, and removing rows]
+
+=== Support for visualization
+
+* link:#_plotting[Plotting] data
+
+=== Looking ahead
+
+In the rest of this User Guide we discuss each category of dataframe operation, as well as the visualization capabilities Tablesaw offers. If you haven't already tried it, we strongly recommend the link:#_getting_started[Getting Started section] as the best way to see how it all fits together.

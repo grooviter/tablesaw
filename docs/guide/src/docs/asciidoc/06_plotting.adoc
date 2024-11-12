@@ -1,0 +1,11 @@
+== Plotting
+
+include::plotting/introduction.adoc[]
+
+include::plotting/bars_and_pies.adoc[]
+
+include::plotting/histograms.adoc[]
+
+include::plotting/scatterplots.adoc[]
+
+include::plotting/timeseries.adoc[]

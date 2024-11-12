@@ -1,0 +1,56 @@
+=== Adding a new column type
+
+Note: This is a work in progress.
+
+It may be useful to add custom column types. Possible applications include columns for geographic coordinates, zoned date-times, characters, sequence data, email addresses, urls, distances (with units), specialized numeric types, lists, JSON, XML, or whatever objects are important in your application. 
+
+There are several steps to be performed. This document walks you through them. 
+
+- Add a class that implements ColumnType.
+- Add String parsing support
+- Add a class that implements Column
+- Add functions for filtering, mapping, and summarizing
+- Extending Row
+- Handling SQL results sets
+- Misc. 
+
+==== ColumnType
+
+To add a new ColumnType you implement the ColumnType interface. The simplest way is to subclass AbstractColumnType.
+
+==== StringParser
+
+StringParsers are used by the CsvReader to load data from CSV files. StringParser is an abstract class. 
+
+==== Update CsvReader
+
+To use automatic type detection for the column type, it must be accessible to CsvReader, you should probably update
+CsvReader for the new type detection.
+
+==== Implementing Column
+
+To add a new column class you must implement the Column interface. One way is to subclass AbstractColumn.
+
+==== Other interfaces
+
+Consider making your column implement CategoricalColumn. 
+
+==== Numeric columns
+
+If the type is numeric, on the other hand it would be preferable to subclass NumberColumn, which is a subclass of AbstractColumn.
+
+==== Implement filtering, mapping, summarizing
+
+TODO
+
+==== Extending Row
+
+TODO
+
+==== Supporting Joins
+
+TODO
+
+==== Other changes
+
+Handling SQL Result Sets

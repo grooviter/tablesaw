@@ -1,0 +1,139 @@
+plugins {
+    id 'org.kordamp.gradle.groovy-project'
+    id 'org.kordamp.gradle.codenarc'
+    id 'org.jreleaser' version '1.15.0'
+}
+
+ext {
+    mavenUsername   = findProperty("PUBLISH_REPO_USERNAME")
+    mavenPassword   = findProperty("PUBLISH_REPO_PASSWORD")
+    shouldRelease   = !"$version".endsWith('SNAPSHOT')
+}
+
+config {
+    release = shouldRelease
+
+    info {
+        name          = 'Tablesaw'
+        vendor        = 'Grooviter'
+        description   = 'bla'
+        inceptionYear = '2021'
+        tags          = ['data-analysis', 'java']
+
+        links {
+            website      = 'https://github.com/grooviter/tablesaw'
+            issueTracker = 'https://github.com/grooviter/tablesaw/issues'
+            scm          = 'https://github.com/grooviter/tablesaw.git'
+        }
+        people {
+            person {
+                id    = 'marioggar'
+                name  = 'Mario Garcia'
+                roles = ['developer']
+            }
+        }
+        repositories {
+            repository {
+                name = 'releases'
+                url  = 'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'
+                credentials {
+                    username = mavenUsername
+                    password = mavenPassword
+                }
+            }
+            repository {
+                name = 'snapshots'
+                url  = 'https://s01.oss.sonatype.org/content/repositories/snapshots/'
+                credentials {
+                    username = mavenUsername
+                    password = mavenPassword
+                }
+            }
+        }
+    }
+    artifacts {
+        minpom {
+            enabled
+        }
+    }
+    publishing {
+        releasesRepository  = 'releases'
+        snapshotsRepository = 'snapshots'
+        signing {
+            enabled    = shouldRelease
+            keyId      = findProperty("PUBLISH_SIGN_KEY_ID")
+            password   = findProperty("PUBLISH_SIGN_SECRET")
+            secretKey  = findProperty("PUBLISH_SIGN_KEY")
+        }
+        pom {
+            overwriteInceptionYear = "2021"
+        }
+    }
+    docs {
+        guide {
+            publish {
+                enabled = true
+                message = "chores(docs): publish docs for version ${version}"
+            }
+        }
+        javadoc {
+            // #TODO :tablesaw-arrow:javadoc fails
+            enabled = false
+        }
+    }
+    licensing {
+        enabled = false
+        includes = ['**/*.java', '**/*.gradle']
+        licenses {
+            license {
+                id = 'Apache-2.0'
+            }
+        }
+    }
+    coverage {
+        jacoco {
+            enabled = true
+        }
+    }
+}
+
+jreleaser {
+    release {
+        github {
+            token     = findProperty('PUBLISH_GH_TOKEN')
+            overwrite = true
+            changelog {
+                formatted = 'ALWAYS'
+                preset    = 'conventional-commits'
+                hide {
+                    uncategorized = true
+                }
+            }
+            prerelease {
+                enabled = !shouldRelease
+            }
+        }
+    }
+    signing {
+        active = 'NEVER'
+    }
+    deploy {
+        maven { active = 'NEVER' }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    tasks.withType(PublishToMavenRepository).configureEach {
+        enabled = it.project.projectDir.parentFile.name != 'samples'
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        sourceCompatibility = findProperty('sourceCompatibility')
+        targetCompatibility = findProperty('targetCompatibility')
+        options.encoding    = 'UTF-8'
+    }
+}

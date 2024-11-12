@@ -1,0 +1,25 @@
+= Tablesaw
+:revnumber: {tablesaw}
+:numbered:
+:imagesdir: images
+:baseDir: .
+:stem:
+:toclevels: 4
+
+include::00_introduction.adoc[]
+
+include::01_getting_started.adoc[]
+
+include::03_columns.adoc[]
+
+include::04_tables.adoc[]
+
+include::05_importing.adoc[]
+
+include::06_plotting.adoc[]
+
+include::07_tutorial.adoc[]
+
+include::08_ml.adoc[]
+
+include::09_contributing.adoc[]

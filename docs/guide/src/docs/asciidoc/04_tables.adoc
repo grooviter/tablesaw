@@ -1,0 +1,13 @@
+== Tables
+
+include::tables/overview.adoc[]
+
+include::tables/filters.adoc[]
+
+include::tables/sorting.adoc[]
+
+include::tables/reducing.adoc[]
+
+include::tables/rows.adoc[]
+
+include::tables/crosstabs.adoc[]
