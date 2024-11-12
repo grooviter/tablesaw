@@ -30,6 +30,7 @@ dependencies {
     testImplementation "org.bytedeco:javacpp:$javacpp"
     testImplementation "org.bytedeco:openblas:$openblas-$javacpp"
     testImplementation "org.bytedeco:openblas-platform:$openblas-$javacpp"
+    testImplementation "org.bytedeco:mkl-platform:$mkl-$javacpp"
     testImplementation "org.bytedeco:arpack-ng:$arpack_ng-$javacpp"
     testImplementation "org.bytedeco:arpack-ng-platform:$arpack_ng-$javacpp"
 
