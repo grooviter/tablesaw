@@ -17,7 +17,7 @@ dependencies {
     // The uber-fast, ultra-lightweight classpath and module scanner for JVM languages.
     implementation 'io.github.classgraph:classgraph:4.8.168'
     // smile ML library
-    compileOnly "com.github.haifengl:smile-data:$smile"
+    compileOnly "com.github.haifengl:smile-data:$smile_data"
 
     // TEST
     testImplementation 'org.apache.commons:commons-lang3:3.14.0'
