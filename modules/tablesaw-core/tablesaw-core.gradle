@@ -27,9 +27,9 @@ dependencies {
 
     testImplementation "com.github.haifengl:smile-core:$smile"
     testImplementation "com.github.haifengl:smile-mkl:$smile"
-    testImplementation "org.bytedeco:openblas:$openblas"
-    testImplementation "org.bytedeco:javacpp:$openblas"
-    testImplementation "org.bytedeco:arpack-ng:$openblas"
+    testImplementation "org.bytedeco:openblas:$openblas-$javacpp"
+    testImplementation "org.bytedeco:javacpp:$javacpp"
+    testImplementation "org.bytedeco:arpack-ng:$arpack_ng-$javacpp"
 
 
     testImplementation 'com.google.jimfs:jimfs:1.3.0'
