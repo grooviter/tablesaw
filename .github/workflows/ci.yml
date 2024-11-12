@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -24,4 +24,4 @@ jobs:
         with:
           java-version: ${{ matrix.java-version }}
       - name: Test with Maven
-        run: mvn test
+        run: ./gradlew build
