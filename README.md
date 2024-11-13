@@ -12,8 +12,8 @@ be used to prepare data for working with machine learning libraries like Smile, 
 ### Features
 
 #### Data processing & transformation
-* Import data from Excel, CSV, TSV, JSON, HTML, or Fixed Width text files, from local / remote location (http, S3, etc.)
-* Import data from RDBMS
+
+* Import data: RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files
 * Export data to CSV, JSON, HTML or Fixed Width files.
 * Combine tables by appending or joining
 * Add and remove columns or rows
