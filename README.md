@@ -5,12 +5,15 @@ Tablesaw
 
 ### Overview
 
-__Tablesaw__ is a dataframe and visualization library that supports loading, cleaning, transforming, filtering, and summarizing data. If you work with data in Java, it may save you time and effort. Tablesaw also supports descriptive statistics and can be used to prepare data for working with machine learning libraries like Smile, Tribuo, H20.ai, DL4J.
+__Tablesaw__ is a dataframe and visualization library that supports loading, cleaning, transforming, filtering, and summarizing data. 
+If you work with data in Java, it may save you time and effort. Tablesaw also supports descriptive statistics and can 
+be used to prepare data for working with machine learning libraries like Smile, Tribuo, H20.ai, DL4J.
 
-### Tablesaw features
+### Features
 
 #### Data processing & transformation
-* Import data from RDBMS, Excel, CSV, TSV, JSON, HTML, or Fixed Width text files, whether they are local or remote (http, S3, etc.)
+* Import data from Excel, CSV, TSV, JSON, HTML, or Fixed Width text files, from local / remote location (http, S3, etc.)
+* Import data from RDBMS
 * Export data to CSV, JSON, HTML or Fixed Width files.
 * Combine tables by appending or joining
 * Add and remove columns or rows
@@ -18,20 +21,21 @@ __Tablesaw__ is a dataframe and visualization library that supports loading, cle
 * Map/Reduce operations
 * Handle missing values
 
+#### Statistics
+
+Descriptive stats such as mean, min, max, median, sum, product, standard deviation, variance, percentiles, 
+geometric mean, skewness, kurtosis, etc.
+
 #### Visualization
 
 Tablesaw supports data visualization by providing a wrapper for the Plot.ly JavaScript plotting library. Here are a few examples of the new library in action.
 
-| ![Tornadoes](docs/guide/src/docs/images/eda/box1.png)          | ![Tornadoes](docs/guide/src/docs/images/eda/scatter_2_Yaxes.png) | ![Tornadoes](docs/guide/src/docs/images/tornado.scatter.png) |
-|-------------------------------------------------------------------------------------------| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Tornadoes](docs/guide/src/docs/images/eda/bush_time_series2.png)                        | ![Tornadoes](docs/guide/src/docs/images/eda/hist_overlay.png) | ![Tornadoes](docs/guide/src/docs/images/eda/histogram2.png) |
-| ![Tornadoes](docs/guide/src/docs/images/eda/histogram2d.png)   | ![Tornadoes](docs/guide/src/docs/images/eda/pie.png) | ![Tornadoes](docs/guide/src/docs/images/eda/wine_bubble_3d.png) |
-| ![](docs/guide/src/docs/images/eda/wine_bubble_with_groups.png) | ![](docs/guide/src/docs/images/eda/robberies_area.png) | ![](docs/guide/src/docs/images/ml/regression/wins%20by%20year.png) |
-| ![Tornadoes](docs/guide/src/docs/images/eda/bush_heatmap1.png) | ![Tornadoes](docs/guide/src/docs/images/eda/tornado_bar_groups.png) | ![Tornadoes](docs/guide/src/docs/images/eda/ohlc1.png) |
-
-#### Statistics
-
-* Descriptive stats: mean, min, max, median, sum, product, standard deviation, variance, percentiles, geometric mean, skewness, kurtosis, etc.
+| ![](docs/guide/src/docs/images/eda/box1.png)                                     | ![](docs/guide/src/docs/images/eda/scatter_2_Yaxes.png)             | ![](docs/guide/src/docs/images/tornado.scatter.png)                |
+|----------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------|
+| ![](docs/guide/src/docs/images/eda/bush_time_series2.png)                        | ![](docs/guide/src/docs/images/eda/hist_overlay.png)                | ![](docs/guide/src/docs/images/eda/histogram2.png)                 |
+| ![](docs/guide/src/docs/images/eda/histogram2d.png)                              | ![](docs/guide/src/docs/images/eda/pie.png)                         | ![](docs/guide/src/docs/images/eda/wine_bubble_3d.png)             |
+| ![](docs/guide/src/docs/images/eda/wine_bubble_with_groups.png)                  | ![](docs/guide/src/docs/images/eda/robberies_area.png)              | ![](docs/guide/src/docs/images/ml/regression/wins%20by%20year.png) |
+| ![](docs/guide/src/docs/images/eda/bush_heatmap1.png)                            | ![](docs/guide/src/docs/images/eda/tornado_bar_groups.png)          | ![](docs/guide/src/docs/images/eda/ohlc1.png)                      |
 
 ### Getting started
 
