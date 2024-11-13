@@ -30,6 +30,33 @@ geometric mean, skewness, kurtosis, etc.
 
 Tablesaw supports data visualization by providing a wrapper for the Plot.ly JavaScript plotting library. Here are a few examples of the new library in action.
 
+<table>
+  <tr>
+    <td><img src="docs/guide/src/docs/images/eda/box1.png" alt="chart" width="230" height="172" /></td>
+    <td><img src="docs/guide/src/docs/images/eda/scatter_2_Yaxes.png" alt="chart" width="230" height="172" /></td>
+    <td><img src="docs/guide/src/docs/images/tornado.scatter.png" alt="chart" width="230" height="172" /></td>
+    <td><img src="docs/guide/src/docs/images/eda/bush_time_series2.png" alt="chart" width="230" height="172" /></td> 
+  </tr>
+  <tr>
+    <td><img src="docs/guide/src/docs/images/eda/hist_overlay.png" alt="chart" width="230" height="172" /></td>
+    <td><img src="docs/guide/src/docs/images/eda/histogram2.png" alt="chart" width="230" height="172" /></td>
+    <td><img src="docs/guide/src/docs/images/eda/histogram2d.png" alt="chart" width="230" height="172" /></td>
+    <td><img src="docs/guide/src/docs/images/eda/pie.png" alt="chart" width="230" height="172" /></td> 
+  </tr>
+  <tr>
+    <td><img src="" alt="chart" width="230" height="172" /></td>
+    <td><img src="" alt="chart" width="230" height="172" /></td>
+    <td><img src="" alt="chart" width="230" height="172" /></td>
+    <td><img src="" alt="chart" width="230" height="172" /></td> 
+  </tr>
+  <tr>
+    <td><img src="" alt="chart" width="230" height="172" /></td>
+    <td><img src="" alt="chart" width="230" height="172" /></td>
+    <td><img src="" alt="chart" width="230" height="172" /></td>
+    <td><img src="" alt="chart" width="230" height="172" /></td> 
+  </tr>
+</table>
+
 | ![](docs/guide/src/docs/images/eda/box1.png)                                     | ![](docs/guide/src/docs/images/eda/scatter_2_Yaxes.png)             | ![](docs/guide/src/docs/images/tornado.scatter.png)                |
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------|
 | ![](docs/guide/src/docs/images/eda/bush_time_series2.png)                        | ![](docs/guide/src/docs/images/eda/hist_overlay.png)                | ![](docs/guide/src/docs/images/eda/histogram2.png)                 |
