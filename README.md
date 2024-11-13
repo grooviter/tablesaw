@@ -5,21 +5,13 @@ Tablesaw
 
 ### Overview
 
-__Tablesaw__ is a dataframe and visualization library that supports loading, cleaning, transforming, filtering, and summarizing data. 
-If you work with data in Java, it may save you time and effort. Tablesaw also supports descriptive statistics and can 
-be used to prepare data for working with machine learning libraries like Smile, Tribuo, H20.ai, DL4J.
+__Tablesaw__ is a dataframe and visualization library that supports loading, cleaning, transforming, filtering, and summarizing data.
 
 ### Features
 
 #### Data processing & transformation
 
-* Import data from RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files
-* Export data to CSV, JSON, HTML or Fixed Width files.
-* Combine tables by appending or joining
-* Add and remove columns or rows
-* Sort, Group, Filter, Edit, Transpose, etc.
-* Map/Reduce operations
-* Handle missing values
+Import and export data from different sources such as RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files .Combine tables by appending or joining. Add and remove columns or rows. Sort, Group, Filter, Edit, Transpose, etc. Map/Reduce operations. Handle missing values
 
 #### Statistics
 
@@ -87,8 +79,8 @@ External supporting projects - **outside of this organization**:
 
 ### Documentation and support
 
-* Start here:  https://grooviter.github.io/tablesaw
-* Then see our documentation page: https://grooviter.github.io/tablesaw/ 
+* Start with the [tutorial](https://grooviter.github.io/tablesaw#_tutorial) section
+* Then see our [documentation page](https://grooviter.github.io/tablesaw/) 
 * Feature requests and bug reports can be made on the [issues tab](https://github.com/grooviter/tablesaw/issues).
 
 ### Integrations
