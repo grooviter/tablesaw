@@ -2,9 +2,6 @@ Tablesaw
 =======
 
 [![Apache 2.0](https://img.shields.io/github/license/nebula-plugins/nebula-project-plugin.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Build Status](https://travis-ci.org/jtablesaw/tablesaw.svg?branch=master)](https://travis-ci.org/jtablesaw/tablesaw)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3ebd154b5253466b932cb17dda737293)](https://www.codacy.com/gh/jtablesaw/tablesaw/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jtablesaw/tablesaw&amp;utm_campaign=Badge_Grade)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jtablesaw_tablesaw&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=jtablesaw_tablesaw)
 
 ### Overview
 
@@ -25,12 +22,12 @@ __Tablesaw__ is a dataframe and visualization library that supports loading, cle
 
 Tablesaw supports data visualization by providing a wrapper for the Plot.ly JavaScript plotting library. Here are a few examples of the new library in action.
 
-| ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/box1.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/scatter_2_Yaxes.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/tornado.scatter.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/bush_time_series2.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/hist_overlay.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/histogram2.png) |
-| ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/histogram2d.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/pie.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/wine_bubble_3d.png) |
-| ![](https://jtablesaw.github.io/tablesaw/userguide/images/eda/wine_bubble_with_groups.png) | ![](https://jtablesaw.github.io/tablesaw/userguide/images/eda/robberies_area.png) | ![](https://jtablesaw.github.io/tablesaw/userguide/images/ml/regression/wins%20by%20year.png) |
-| ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/bush_heatmap1.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/tornado_bar_groups.png) | ![Tornadoes](https://jtablesaw.github.io/tablesaw/userguide/images/eda/ohlc1.png) |
+| ![Tornadoes](docs/guide/src/docs/images/eda/box1.png)          | ![Tornadoes](docs/guide/src/docs/images/eda/scatter_2_Yaxes.png) | ![Tornadoes](docs/guide/src/docs/images/tornado.scatter.png) |
+|-------------------------------------------------------------------------------------------| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Tornadoes](docs/guide/src/docs/images/eda/bush_time_series2.png)                        | ![Tornadoes](docs/guide/src/docs/images/eda/hist_overlay.png) | ![Tornadoes](docs/guide/src/docs/images/eda/histogram2.png) |
+| ![Tornadoes](docs/guide/src/docs/images/eda/histogram2d.png)   | ![Tornadoes](docs/guide/src/docs/images/eda/pie.png) | ![Tornadoes](docs/guide/src/docs/images/eda/wine_bubble_3d.png) |
+| ![](docs/guide/src/docs/images/eda/wine_bubble_with_groups.png) | ![](docs/guide/src/docs/images/eda/robberies_area.png) | ![](docs/guide/src/docs/images/ml/regression/wins%20by%20year.png) |
+| ![Tornadoes](docs/guide/src/docs/images/eda/bush_heatmap1.png) | ![Tornadoes](docs/guide/src/docs/images/eda/tornado_bar_groups.png) | ![Tornadoes](docs/guide/src/docs/images/eda/ohlc1.png) |
 
 #### Statistics
 
@@ -38,7 +35,7 @@ Tablesaw supports data visualization by providing a wrapper for the Plot.ly Java
 
 ### Getting started
 
-Add tablesaw-core to your project. You can find the version number for the latest release in the [release notes](https://github.com/jtablesaw/tablesaw/releases):
+Add tablesaw-core to your project. You can find the version number for the latest release in the [release notes](https://github.com/grooviter/tablesaw/releases):
 
 ```xml
 <dependency>
@@ -66,10 +63,9 @@ External supporting projects - **outside of this organization**:
 
 ### Documentation and support
 
-* Start here:  https://jtablesaw.github.io/tablesaw/gettingstarted
-* Then see our documentation page: https://jtablesaw.github.io/tablesaw/ and the [Tablesaw User Guide](https://jtablesaw.github.io/tablesaw/userguide/toc).
-* Ask questions, make suggestions, or tell us how you're using Tablesaw in the new GitHub [discussions forum](https://github.com/jtablesaw/tablesaw/discussions). 
-* Feature requests and bug reports can be made on the [issues tab](https://github.com/jtablesaw/tablesaw/issues).
+* Start here:  https://grooviter.github.io/tablesaw
+* Then see our documentation page: https://grooviter.github.io/tablesaw/ 
+* Feature requests and bug reports can be made on the [issues tab](https://github.com/grooviter/tablesaw/issues).
 
 ### Integrations
 

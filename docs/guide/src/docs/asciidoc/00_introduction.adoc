@@ -1,6 +1,10 @@
 == Introduction
 
-Tablesaw combines tools for working with tables and columns with the ability to create statistical models and visualizations. In other words, it's a data frame, with added features. 
+Tablesaw combines tools for working with tables and columns with the ability to create statistical models and visualizations. In other words, it's a data frame, with added features.
+
+=== History
+
+This project was born as a fork of the original Tablesaw project. You can find the original repository at https://github.com/jtablesaw/tablesaw. At the moment it can be still be used as a replacement from the original as it respects the same package naming.
 
 === What's a dataframe?
 A dataframe is an in-memory, tabular data structure in which each column holds a single datatype, while rows can contain a variety of types. Tablesaw provide these operations:
