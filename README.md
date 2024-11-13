@@ -13,7 +13,7 @@ be used to prepare data for working with machine learning libraries like Smile, 
 
 #### Data processing & transformation
 
-* Import data: RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files
+* Import data from RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files
 * Export data to CSV, JSON, HTML or Fixed Width files.
 * Combine tables by appending or joining
 * Add and remove columns or rows
