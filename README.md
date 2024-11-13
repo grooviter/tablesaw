@@ -87,3 +87,11 @@ External supporting projects - **outside of this organization**:
 * Eclipse uses may find [etablesaw](https://github.com/hallvard/etablesaw) useful. It provides Eclipse integration aimed at turning Eclipse into a data workbench.   
 * You may utilize Tablesaw with many machine learning libraries. To see an example of using Tablesaw with [Smile](https://haifengl.github.io) check out [the sample Tablesaw Jupyter notebook](https://github.com/twosigma/beakerx/blob/master/doc/groovy/Tablesaw.ipynb)
 * You may use [quandl4j-tablesaw](http://quandl4j.org) if you'd like to load financial and economic data from [Quandl](https://www.quandl.com) into Tablesaw. This is demonstrated in [the sample Tablesaw notebook](https://github.com/twosigma/beakerx/blob/master/doc/groovy/Tablesaw.ipynb) as well
+
+### Credits
+
+This repository was born as a fork of the original [Tablesaw](https://github.com/jtablesaw/tablesaw) project.
+
+### License
+
+This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
