@@ -11,7 +11,7 @@ __Tablesaw__ is a dataframe and visualization library that supports loading, cle
 
 #### Data processing & transformation
 
-Import and export data from different sources such as RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files .Combine tables by appending or joining. Add and remove columns or rows. Sort, Group, Filter, Edit, Transpose, etc. Map/Reduce operations. Handle missing values
+Import and export data from different sources: RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files. Combine tables by appending or joining. Add and remove columns or rows. Sort, Group, Filter, Edit, Transpose, etc. Map/Reduce operations. Handle missing values.
 
 #### Statistics
 
@@ -51,7 +51,7 @@ Tablesaw supports data visualization by providing a wrapper for the Plot.ly Java
 
 ### Getting started
 
-Add tablesaw-core to your project. You can find the version number for the latest release in the [release notes](https://github.com/grooviter/tablesaw/releases):
+Add tablesaw-core to your maven project. You can find the version number for the latest release in the [release notes](https://github.com/grooviter/tablesaw/releases) page:
 
 ```xml
 <dependency>
@@ -61,7 +61,7 @@ Add tablesaw-core to your project. You can find the version number for the lates
 </dependency>
 ```
 
-Or gradle dependency:
+Or as a gradle dependency:
 
 ```groovy
 implementation "com.github.grooviter:tablesaw-core:VERSION_NUMBER_GOES_HERE"
