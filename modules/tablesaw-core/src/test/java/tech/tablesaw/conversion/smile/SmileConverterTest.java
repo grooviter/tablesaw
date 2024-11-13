@@ -85,6 +85,6 @@ public class SmileConverterTest {
     table.addColumns(StringColumn.create("string", new String[] {"james", "bond"}));
     table.addColumns(StringColumn.create("text", new String[] {"foo", "bar"}));
     DataFrame dataframe = table.smile().toDataFrame();
-    assertEquals(2, dataframe.nrows());
+    assertEquals(2, dataframe.nrow());
   }
 }
