@@ -5,7 +5,7 @@ Tablesaw
 
 ### Overview
 
-__Tablesaw__ is a dataframe and visualization library that supports loading, cleaning, transforming, filtering, and summarizing data.
+**Tablesaw** is a dataframe and visualization library that supports loading, cleaning, transforming, filtering, and summarizing data.
 
 ### Features
 
@@ -79,8 +79,8 @@ External supporting projects - **outside of this organization**:
 
 ### Documentation and support
 
-* Start with the [tutorial](https://grooviter.github.io/tablesaw#_tutorial) section
-* Then see our [documentation page](https://grooviter.github.io/tablesaw/) 
+* Start with the [tutorial](https://grooviter.github.io/tablesaw/index.html#_tutorial) section
+* Then check the full [documentation page](https://grooviter.github.io/tablesaw/) 
 * Feature requests and bug reports can be made on the [issues tab](https://github.com/grooviter/tablesaw/issues).
 
 ### Integrations
@@ -96,7 +96,7 @@ External supporting projects - **outside of this organization**:
 
 #### Other integrations
 
-* Eclipse uses may find [etablesaw](https://github.com/hallvard/etablesaw) useful. It provides Eclipse integration aimed at turning Eclipse into a data workbench.   
+* Eclipse uses may find [etablesaw](https://github.com/hallvard/etablesaw) useful. It provides Eclipse integration aimed at turning Eclipse into a data workbench.
 * You may utilize Tablesaw with many machine learning libraries. To see an example of using Tablesaw with [Smile](https://haifengl.github.io) check out [the sample Tablesaw Jupyter notebook](https://github.com/twosigma/beakerx/blob/master/doc/groovy/Tablesaw.ipynb)
 * You may use [quandl4j-tablesaw](http://quandl4j.org) if you'd like to load financial and economic data from [Quandl](https://www.quandl.com) into Tablesaw. This is demonstrated in [the sample Tablesaw notebook](https://github.com/twosigma/beakerx/blob/master/doc/groovy/Tablesaw.ipynb) as well
 
