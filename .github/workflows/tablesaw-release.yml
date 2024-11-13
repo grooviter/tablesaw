@@ -29,6 +29,6 @@ jobs:
           ./gradlew \
             --stacktrace \
             build \
-#            publish \
-#            :guide:gitPublishPush \
-#            jreleaserFullRelease
+            publish \
+            :guide:gitPublishPush \
+            jreleaserFullRelease
