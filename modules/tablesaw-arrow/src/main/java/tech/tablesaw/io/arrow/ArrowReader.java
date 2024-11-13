@@ -21,14 +21,29 @@ public class ArrowReader {
 
   private final File file;
 
+  /**
+   * Creates an {@link ArrowReader} from a {@link Path}
+   *
+   * @param path the path of the file to read
+   */
   public ArrowReader(Path path) {
     this.file = path.toFile();
   }
 
+  /**
+   * Creates an {@link ArrowReader} from a {@link File}
+   *
+   * @param file the file to read
+   */
   public ArrowReader(File file) {
     this.file = file;
   }
 
+  /**
+   * Reads from a file and returns a {@link Table}
+   *
+   * @return an instance of {@link Table}
+   */
   public Table read() {
     Table table = Table.create(file.getName());
     // Create a RootAllocator to allocate memory for our vectors

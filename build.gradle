@@ -8,6 +8,8 @@ ext {
     mavenUsername   = findProperty("PUBLISH_REPO_USERNAME")
     mavenPassword   = findProperty("PUBLISH_REPO_PASSWORD")
     shouldRelease   = !"$version".endsWith('SNAPSHOT')
+    releaseVersion  = findProperty('version')
+    currentYear     = new Date().format("YYYY")
 }
 
 config {
@@ -73,11 +75,19 @@ config {
         guide {
             publish {
                 enabled = true
-                message = "chores(docs): publish docs for version ${version}"
+                message = "chores(docs): publish docs for version $releaseVersion"
             }
         }
         javadoc {
-            enabled = false
+            options {
+                docTitle = "Tablesaw $releaseVersion"
+                author   = "Tablesaw"
+                footer   = "Tablesaw $releaseVersion ($currentYear)"
+                version  = "$releaseVersion"
+            }
+            autoLinks {
+                enabled = false
+            }
         }
     }
     licensing {

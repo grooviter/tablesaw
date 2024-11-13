@@ -210,21 +210,21 @@ public class ArrowWriter {
 
   /**
    * Writes table to arrow-formatted file. The Arrow Stream format is used, meaning that there is no
-   * sparse index into the individual data blocks, and only sequential access is supported.
+   * sparse index into the individual data blocks, and only sequential access is supported.<br/><br/>
    *
    * Note that for Arrow Streaming Format files, the extension ".arrows" is recommended. The
    * ".arrow" extension is intended for use by Arrow File Format, which provides random access to
-   * the individual blocks
+   * the individual blocks<br/><br/>
    *
    * The arrow format specifies writing tables in record batches, along with any
-   * DictionaryProviders that will be used in encoding the data.
+   * DictionaryProviders that will be used in encoding the data.<br/><br/>
    *
    * The process for writing record batches is as follows: - create a VectorSchemaRoot (VSR) -
    * populate the vectors in the VSR with the first batch of rows from the table, using some
    * arbitrary number of rows for the batch size - write the batch to the output stream - reset the
-   * vectors in the VSR - repopulate the vectors the next batch
+   * vectors in the VSR - repopulate the vectors the next batch<br/><br/>
    *
-   * The cycle of reset, repopulate, and write is continued until all the data has been written
+   * The cycle of reset, repopulate, and write is continued until all the data has been written<br/><br/>
    *
    * @param table The table to write
    * @param file The file we're writing to
