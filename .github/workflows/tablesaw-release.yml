@@ -1,0 +1,27 @@
+name: tablesaw-release
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  Tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK $
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '17'
+      - name: Release
+        run: |
+          ./gradlew \
+            --stacktrace \
+            build \
+#            publish \
+#            :guide:gitPublishPush \
+#            jreleaserFullRelease

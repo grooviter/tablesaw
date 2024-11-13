@@ -1,8 +1,5 @@
-name: ci
+name: tablesaw-pr
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 jobs:

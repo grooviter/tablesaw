@@ -16,9 +16,9 @@ config {
     info {
         name          = 'Tablesaw'
         vendor        = 'Grooviter'
-        description   = 'bla'
-        inceptionYear = '2021'
-        tags          = ['data-analysis', 'java']
+        description   = 'Tablesaw is a dataframe and visualization library'
+        inceptionYear = '2016'
+        tags          = ['data-analysis', 'dataframe', 'visualization', 'java']
 
         links {
             website      = 'https://github.com/grooviter/tablesaw'
@@ -77,7 +77,6 @@ config {
             }
         }
         javadoc {
-            // #TODO :tablesaw-arrow:javadoc fails
             enabled = false
         }
     }
