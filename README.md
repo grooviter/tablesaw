@@ -1,7 +1,7 @@
 Tablesaw
 =======
 
-[![Apache 2.0](https://img.shields.io/github/license/nebula-plugins/nebula-project-plugin.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Apache 2.0](https://img.shields.io/github/license/nebula-plugins/nebula-project-plugin.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![main](https://github.com/grooviter/tablesaw/actions/workflows/tablesaw-release.yml/badge.svg)](https://github.com/grooviter/tablesaw/actions/workflows/tablesaw-release.yml) ![Maven Central](https://img.shields.io/maven-central/v/com.github.grooviter/tablesaw)
 
 ### Overview
 

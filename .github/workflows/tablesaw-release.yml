@@ -1,4 +1,4 @@
-name: tablesaw-release
+name: main
 on:
   push:
     branches:

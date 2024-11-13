@@ -1,4 +1,4 @@
-name: tablesaw-pr
+name: pr
 on:
   pull_request:
 
