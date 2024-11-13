@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Set up JDK $
 #        uses: actions/setup-java@v4
-        uses: actions/setup-java@V1
+        uses: actions/setup-java@v1
         with:
 #          distribution: 'oracle'
           java-version: ${{ matrix.java-version }}
