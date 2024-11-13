@@ -53,7 +53,7 @@ Tablesaw supports data visualization by providing a wrapper for the Plot.ly Java
     <td><img src="docs/guide/src/docs/images/eda/bush_heatmap1.png" alt="chart" width="230" height="150" /></td>
     <td><img src="docs/guide/src/docs/images/eda/tornado_bar_groups.png" alt="chart" width="230" height="150" /></td>
     <td><img src="docs/guide/src/docs/images/eda/ohlc1.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="" alt="chart" width="230" height="150" /></td> 
+    <td></td> 
   </tr>
 </table>
 
