@@ -151,21 +151,21 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">write</span><wbr><span class="parameters">(<a href="../../api/Table.html" title="class in tech.tablesaw.api">Table</a>&nbsp;table,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html" title="class or interface in java.io" class="external-link">File</a>&nbsp;file)</span></div>
 <div class="block">Writes table to arrow-formatted file. The Arrow Stream format is used, meaning that there is no
- sparse index into the individual data blocks, and only sequential access is supported.
+ sparse index into the individual data blocks, and only sequential access is supported.<br/><br/>
 
  Note that for Arrow Streaming Format files, the extension ".arrows" is recommended. The
  ".arrow" extension is intended for use by Arrow File Format, which provides random access to
- the individual blocks
+ the individual blocks<br/><br/>
 
  The arrow format specifies writing tables in record batches, along with any
- DictionaryProviders that will be used in encoding the data.
+ DictionaryProviders that will be used in encoding the data.<br/><br/>
 
  The process for writing record batches is as follows: - create a VectorSchemaRoot (VSR) -
  populate the vectors in the VSR with the first batch of rows from the table, using some
  arbitrary number of rows for the batch size - write the batch to the output stream - reset the
- vectors in the VSR - repopulate the vectors the next batch
+ vectors in the VSR - repopulate the vectors the next batch<br/><br/>
 
- The cycle of reset, repopulate, and write is continued until all the data has been written</div>
+ The cycle of reset, repopulate, and write is continued until all the data has been written<br/><br/></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>table</code> - The table to write</dd>
