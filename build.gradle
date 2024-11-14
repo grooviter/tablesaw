@@ -145,4 +145,13 @@ allprojects {
         targetCompatibility = findProperty('targetCompatibility')
         options.encoding    = 'UTF-8'
     }
+
+    // TODO: report to Kordamp javadoc aggregation output conflicts with createGuide
+    tasks.withType(Copy).configureEach {
+        if (it.name == 'aggregateCopyDocFiles') {
+            it.mustRunAfter(project(":guide")
+                .tasks
+                .named('createGuide'))
+        }
+    }
 }

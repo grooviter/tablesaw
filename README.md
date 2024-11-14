@@ -11,7 +11,12 @@ Tablesaw
 
 #### Data processing & transformation
 
-Import and export data from different sources: RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files. Combine tables by appending or joining. Add and remove columns or rows. Sort, Group, Filter, Edit, Transpose, etc. Map/Reduce operations. Handle missing values.
+- Import and export data: RDBMS, Excel, CSV, TSV, JSON, HTML, Fixed Width text files.
+- Combine tables by appending or joining. 
+- Add and remove columns or rows.
+- Sort, Group, Filter, Edit, Transpose, etc. 
+- Map/Reduce operations.
+- Handle missing values.
 
 #### Statistics
 
@@ -24,27 +29,27 @@ Tablesaw supports data visualization by providing a wrapper for the Plot.ly Java
 
 <table>
   <tr>
-    <td><img src="docs/guide/src/docs/images/eda/box1.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/scatter_2_Yaxes.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/tornado.scatter.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/bush_time_series2.png" alt="chart" width="230" height="150" /></td> 
+    <td><img src="docs/guide/src/docs/resources/images/eda/box1.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/scatter_2_Yaxes.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/tornado.scatter.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/bush_time_series2.png" alt="chart" width="230" height="150" /></td> 
   </tr>
   <tr>
-    <td><img src="docs/guide/src/docs/images/eda/hist_overlay.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/histogram2.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/histogram2d.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/pie.png" alt="chart" width="230" height="150" /></td> 
+    <td><img src="docs/guide/src/docs/resources/images/eda/hist_overlay.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/histogram2.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/histogram2d.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/pie.png" alt="chart" width="230" height="150" /></td> 
   </tr>
   <tr>
-    <td><img src="docs/guide/src/docs/images/eda/wine_bubble_3d.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/wine_bubble_with_groups.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/robberies_area.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/ml/regression/wins%20by%20year.png" alt="chart" width="230" height="150" /></td> 
+    <td><img src="docs/guide/src/docs/resources/images/eda/wine_bubble_3d.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/wine_bubble_with_groups.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/robberies_area.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/ml/regression/wins%20by%20year.png" alt="chart" width="230" height="150" /></td> 
   </tr>
   <tr>
-    <td><img src="docs/guide/src/docs/images/eda/bush_heatmap1.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/tornado_bar_groups.png" alt="chart" width="230" height="150" /></td>
-    <td><img src="docs/guide/src/docs/images/eda/ohlc1.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/bush_heatmap1.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/tornado_bar_groups.png" alt="chart" width="230" height="150" /></td>
+    <td><img src="docs/guide/src/docs/resources/images/eda/ohlc1.png" alt="chart" width="230" height="150" /></td>
     <td></td> 
   </tr>
 </table>
