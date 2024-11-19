@@ -11,7 +11,7 @@ dependencies {
     // compressed bitmaps
     implementation 'org.roaringbitmap:RoaringBitmap:1.0.5'
     // csv parser (univocity)
-    implementation 'com.univocity:univocity-parsers:2.9.1'
+    api 'com.univocity:univocity-parsers:2.9.1'
     // dealing with unicode
     implementation 'com.ibm.icu:icu4j:74.2'
     // The uber-fast, ultra-lightweight classpath and module scanner for JVM languages.
