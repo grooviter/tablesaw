@@ -3,11 +3,10 @@ plugins {
 }
 
 dependencies {
-    implementation project(":tablesaw-core")
-
-    implementation "com.fasterxml.jackson.core:jackson-databind:$jackson"
-    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson"
-    implementation 'com.github.wnameless.json:json-flattener:0.16.6'
+    api project(":tablesaw-core")
+    api "com.fasterxml.jackson.core:jackson-databind:$jackson"
+    api "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson"
+    api 'com.github.wnameless.json:json-flattener:0.16.6'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.8.1'
